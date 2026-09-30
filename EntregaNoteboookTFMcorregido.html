@@ -7812,31 +7812,19 @@ Para comenzar con la revisión de los datos, se procede a importar librerías es
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [72]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [118]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Iniciamos importando las librerias </span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Librerías utilizadas en el notebook</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span> 
-<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>  
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.io</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pio</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.express</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">px</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">plotly.subplots</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_subplots</span>
-
-<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.ensemble</span><span class="w"> </span><span class="kn">import</span> <span class="n">RandomForestClassifier</span><span class="p">,</span> <span class="n">GradientBoostingClassifier</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LogisticRegression</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">StandardScaler</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">classification_report</span><span class="p">,</span> <span class="n">roc_auc_score</span><span class="p">,</span> <span class="n">confusion_matrix</span><span class="p">,</span> <span class="n">ConfusionMatrixDisplay</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
 
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">'display.max_columns'</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">'display.width'</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
-<span class="n">RANDOM_STATE</span> <span class="o">=</span> <span class="mi">42</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Librerias importadas OK ✅"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Librerías importadas OK ✅"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7849,7 +7837,7 @@ Para comenzar con la revisión de los datos, se procede a importar librerías es
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Librerias importadas OK ✅
+<pre>Librerías importadas OK ✅
 </pre>
 </div>
 </div>
@@ -7871,7 +7859,7 @@ Para comenzar con la revisión de los datos, se procede a importar librerías es
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [73]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [119]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">input_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">()</span> <span class="o">/</span> <span class="s2">"input"</span>
@@ -7925,7 +7913,7 @@ output_dir será: c:\Users\jmendozarojas\OneDrive - Getronics\Escritorio\INESDI\
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [74]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [120]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Estadística descriptiva de las variables clave de perfil / consumo</span>
@@ -7942,7 +7930,7 @@ output_dir será: c:\Users\jmendozarojas\OneDrive - Getronics\Escritorio\INESDI\
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[74]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[120]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8146,7 +8134,7 @@ Conocer el tamaño inicial de la muestra facilita comprobar posteriormente que l
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [75]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [121]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Función para contar la cantidad total de clientes en la BD</span>
@@ -8194,7 +8182,7 @@ Este enfoque evita eliminar datos válidos y mejora considerablemente la calidad
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [76]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [122]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Análisis:</span>
@@ -8294,7 +8282,7 @@ max       99.000000  134200.660000   7901.990000  2.538921e+06  335186.920000   
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [77]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [123]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Panorama general: tipos de dato y nulos</span>
@@ -8314,7 +8302,7 @@ max       99.000000  134200.660000   7901.990000  2.538921e+06  335186.920000   
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[77]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[123]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8468,7 +8456,7 @@ max       99.000000  134200.660000   7901.990000  2.538921e+06  335186.920000   
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=962df740">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ea687e82">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8486,12 +8474,12 @@ max       99.000000  134200.660000   7901.990000  2.538921e+06  335186.920000   
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=83552cb2">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c192b81f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [78]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [124]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 1) Filas sin puntuación SIO: se eliminan (114 registros, 1,1 %)</span>
@@ -8549,7 +8537,7 @@ Clientes con renta imputada (flag renta_imputada = 1): 2757
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [79]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [125]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">resumen</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
@@ -8568,7 +8556,7 @@ Clientes con renta imputada (flag renta_imputada = 1): 2757
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[79]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[125]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8726,7 +8714,7 @@ Clientes con renta imputada (flag renta_imputada = 1): 2757
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [80]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [126]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Analisis de los datos atipicos, conteno e identificación </span>
@@ -8755,7 +8743,7 @@ Clientes con renta imputada (flag renta_imputada = 1): 2757
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [81]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [127]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Se tomo la decisión de eliminar los 64 registros con esos valores antig=9999, de acuerdo al analisis realizado eran clientes que no forman parte del Banco</span>
@@ -8784,7 +8772,7 @@ Clientes con renta imputada (flag renta_imputada = 1): 2757
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [82]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [128]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Para eliminar realmente del DataFrame principal</span>
@@ -8810,12 +8798,12 @@ Eliminados los registros con valores 9999
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ceac1a85">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=841ec429">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [83]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [129]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Validamos la eliminación de los datos atípicos: 10.000 - 114 (SIO nulos) - 64 (antig = 9999) = 9.822 clientes</span>
@@ -8840,7 +8828,7 @@ Eliminados los registros con valores 9999
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fcf316c6">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d15a4f60">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8864,7 +8852,7 @@ Eliminados los registros con valores 9999
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [84]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [130]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Función para calcular tipo de inversión según edad</span>
@@ -8916,7 +8904,7 @@ Eliminados los registros con valores 9999
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [85]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [131]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">nulos_restantes</span> <span class="o">=</span> <span class="n">df_datasabadell</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -8960,7 +8948,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [86]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [132]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Segementacion de clientes por tipo de cuenta </span>
@@ -8998,7 +8986,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [87]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [133]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Función para realizar group by por tipo de cuenta y contar cuántas personas tienen ese tipo de cuenta (sumar cuando el tipo de cuenta sea igual a 1)</span>
@@ -9065,7 +9053,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [88]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [134]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Usar la función con df_datasabadell en lugar de df_tipocuenta</span>
@@ -9112,7 +9100,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [89]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [135]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Se calcula el promedio de antiguedad del cliente, coincide con el POWER BI</span>
@@ -9141,7 +9129,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [90]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [136]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Se calcula el min de antiguedad del cliente coincide con el POWER BI</span>
@@ -9170,7 +9158,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [91]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [137]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Contar cuántos clientes tienen cada indicador activo</span>
@@ -9221,7 +9209,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [92]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [138]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Crear gráfico (funcionará ahora que conteo_indicadores está definido)</span>
@@ -9272,7 +9260,7 @@ Tendencia Positiva Moderada: Se observa una correlación positiva clara entre la
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [93]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [139]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
@@ -9316,7 +9304,7 @@ Tendencia Positiva Moderada: Se observa una correlación positiva clara entre la
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [94]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [140]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Gráfico de barras de la distribución de tipos de inversión</span>
@@ -9423,7 +9411,7 @@ Porcentaje total: 100.0%
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6d007304">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c12752b2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9436,12 +9424,12 @@ Porcentaje total: 100.0%
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4acc416e">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=940d7ccd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [95]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [141]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Códigos INE de provincia -&gt; nombre y comunidad autónoma (99 = extranjero)</span>
@@ -9515,7 +9503,7 @@ Madrid               724
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=84fdd374">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=aab03a32">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9531,12 +9519,12 @@ Madrid               724
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a4285f7d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c26ef731">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [96]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [142]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Fecha de extracción de la cartera: parámetro del proceso ETL (se reutiliza como fecha del snapshot en el DWH)</span>
@@ -9608,31 +9596,17 @@ Madrid               724
    • Sin dato   : 0
 
 🔎 Clientes con antigüedad mayor que su edad: 1
-   • Fecha más antigua : 07/1953
-   • Fecha más reciente: 08/2026
-   • Antigüedad media  : 12.9 años (mediana 10.0)
-
-🏷️  GRUPOS POR ANTIGÜEDAD:
-   • ≤1 año     :   735 clientes (  7.5%)
-   • 1-3 años   :  1250 clientes ( 12.7%)
-   • 3-5 años   :  1101 clientes ( 11.2%)
-   • 5-10 años  :  1851 clientes ( 18.8%)
-   • 10-20 años :  2653 clientes ( 27.0%)
-   • &gt;20 años   :  2232 clientes ( 22.7%)
-   • Sin dato   : 0
-
-🔎 Clientes con antigüedad mayor que su edad: 1
 </pre>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3cab3bc2">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=dfcb6d1f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [97]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [143]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Catálogo de los 45 indicadores de producto: código -&gt; (nombre, categoría)</span>
@@ -9773,7 +9747,7 @@ Joven      774
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8d6c03e4">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cf5e7f49">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9792,12 +9766,12 @@ Joven      774
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e70f0a3b">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b693ab45">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [98]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [144]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Tabla cruzada real: perfil de inversión x nº de productos de inversión (0, 1, 2, 3, 4+)</span>
@@ -9840,7 +9814,7 @@ Joven      774
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[98]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[144]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9918,7 +9892,7 @@ Joven      774
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f22824a8">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=891fc3c0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9956,16 +9930,16 @@ Joven      774
 </tr>
 </tbody>
 </table>
-<p><strong>Requisitos:</strong> <code>pip install sqlalchemy pymysql</code> y un servidor MySQL 8. Las credenciales se leen de variables de entorno (<code>MYSQL_USER</code>, <code>MYSQL_PASSWORD</code>, <code>MYSQL_HOST</code>, <code>MYSQL_PORT</code>, <code>MYSQL_DB</code>); si no hay contraseña definida, el notebook la pide por pantalla.</p>
+<p><strong>Requisitos:</strong> <code>pip install sqlalchemy pymysql</code> y un servidor MySQL en ejecución. Las credenciales se leen de variables de entorno (<code>MYSQL_USER</code>, <code>MYSQL_PASSWORD</code>, <code>MYSQL_HOST</code>, <code>MYSQL_PORT</code>, <code>MYSQL_DB</code>); si no hay contraseña definida, el notebook la pide por pantalla.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=38c5a1e3">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9c7ffbf4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [99]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [145]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># [CELDA_CONEXION_MYSQL]</span>
@@ -10027,8 +10001,8 @@ Joven      774
     
     <span class="c1"># Verificar conexión</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-    <span class="n">version</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">text</span><span class="p">(</span><span class="s2">"SELECT VERSION() AS version"</span><span class="p">),</span> <span class="n">engine</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"✅ Conectado a MySQL </span><span class="si">{</span><span class="n">version</span><span class="si">}</span><span class="s2"> | base de datos: </span><span class="si">{</span><span class="n">MYSQL_CONFIG</span><span class="p">[</span><span class="s1">'base_datos'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">text</span><span class="p">(</span><span class="s2">"SELECT 1 AS prueba"</span><span class="p">),</span> <span class="n">engine</span><span class="p">)</span>   <span class="c1"># comprueba que la conexión responde</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"✅ Conectado a MySQL | base de datos: </span><span class="si">{</span><span class="n">MYSQL_CONFIG</span><span class="p">[</span><span class="s1">'base_datos'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
     
 <span class="k">except</span> <span class="ne">KeyError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"❌ ERROR DE CLAVES: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -10041,6 +10015,7 @@ Joven      774
     <span class="nb">print</span><span class="p">(</span><span class="s2">"   1. MySQL no está corriendo en localhost:3306"</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"   2. Usuario/contraseña incorrectos"</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"   3. No tienes permisos para crear bases de datos"</span><span class="p">)</span>
+    <span class="k">raise</span>
 </pre></div>
 </div>
 </div>
@@ -10057,14 +10032,14 @@ Joven      774
 ✅ url_mysql() funciona correctamente
 ✅ engine_servidor creado exitosamente
 ✅ Base de datos 'bancosabadell_dw' verificada/creada
-✅ Conectado a MySQL 10.4.32-MariaDB | base de datos: bancosabadell_dw
+✅ Conectado a MySQL | base de datos: bancosabadell_dw
 </pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=66ffdacb">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4e659a6e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -10080,12 +10055,12 @@ Joven      774
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5635fe72">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8b59d6c5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [100]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [146]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">convertir_moneda</span><span class="p">(</span><span class="n">serie</span><span class="p">):</span>
@@ -10150,12 +10125,12 @@ Dataset listo para ingesta: 9822 filas x 96 columnas
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=42c1cb03">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=95aecfe7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [101]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [147]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 4.3 Carga en la tabla de staging (copia fiel del dataset limpio) + clave primaria</span>
@@ -10196,7 +10171,7 @@ Dataset listo para ingesta: 9822 filas x 96 columnas
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=79383a37">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=16e85412">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -10286,12 +10261,12 @@ Dataset listo para ingesta: 9822 filas x 96 columnas
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=0f5d21c0">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b283269a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [102]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [148]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 5.1 Extracción desde MySQL (staging)</span>
@@ -10317,7 +10292,7 @@ Dataset listo para ingesta: 9822 filas x 96 columnas
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dedc84fe">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c413df74">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -10328,12 +10303,12 @@ Dataset listo para ingesta: 9822 filas x 96 columnas
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6a98e6cc">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=af2b4fa5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [103]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [149]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">RECREAR_MODELO</span> <span class="o">=</span> <span class="kc">False</span>
@@ -10633,7 +10608,7 @@ Dataset listo para ingesta: 9822 filas x 96 columnas
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bec0a530">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c45633a0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -10643,12 +10618,12 @@ Dataset listo para ingesta: 9822 filas x 96 columnas
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6cc33307">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=13fd1815">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [104]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [150]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">FECHA_CARGA</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="s1">'s'</span><span class="p">)</span>
@@ -10744,7 +10719,7 @@ dim_cliente       9822 filas
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[104]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[150]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -10808,7 +10783,7 @@ dim_cliente       9822 filas
 <td>10-20 años</td>
 <td>28</td>
 <td>3</td>
-<td>2026-09-29 20:05:14</td>
+<td>2026-09-30 04:54:07</td>
 </tr>
 <tr>
 <th>1</th>
@@ -10831,7 +10806,7 @@ dim_cliente       9822 filas
 <td>&gt;20 años</td>
 <td>8</td>
 <td>3</td>
-<td>2026-09-29 20:05:14</td>
+<td>2026-09-30 04:54:07</td>
 </tr>
 <tr>
 <th>2</th>
@@ -10854,7 +10829,7 @@ dim_cliente       9822 filas
 <td>&gt;20 años</td>
 <td>8</td>
 <td>3</td>
-<td>2026-09-29 20:05:14</td>
+<td>2026-09-30 04:54:07</td>
 </tr>
 <tr>
 <th>3</th>
@@ -10877,7 +10852,7 @@ dim_cliente       9822 filas
 <td>&gt;20 años</td>
 <td>28</td>
 <td>3</td>
-<td>2026-09-29 20:05:14</td>
+<td>2026-09-30 04:54:07</td>
 </tr>
 <tr>
 <th>4</th>
@@ -10900,7 +10875,7 @@ dim_cliente       9822 filas
 <td>1-3 años</td>
 <td>28</td>
 <td>3</td>
-<td>2026-09-29 20:05:14</td>
+<td>2026-09-30 04:54:07</td>
 </tr>
 </tbody>
 </table>
@@ -10910,7 +10885,7 @@ dim_cliente       9822 filas
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=42d0afe8">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3b2f76d6">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -10928,12 +10903,12 @@ dim_cliente       9822 filas
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d8a4843e">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=cf5a7a66">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [105]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [151]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">clasificar_riesgo_endeudamiento</span><span class="p">(</span><span class="n">ratio</span><span class="p">):</span>
@@ -11013,7 +10988,7 @@ Alto                60
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1a4372ec">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=03bda2fc">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -11064,12 +11039,12 @@ Alto                60
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=95d78866">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f0c2be68">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [106]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [152]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">base</span> <span class="o">=</span> <span class="p">(</span><span class="n">fact_cliente_snapshot</span>
@@ -11171,7 +11146,7 @@ agg_top_clientes_patrimonio     100 filas
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2e1bea52">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8f9089df">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -11181,12 +11156,12 @@ agg_top_clientes_patrimonio     100 filas
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f3b0a5e9">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=148d2aaf">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [153]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">TABLAS_A_CARGAR</span> <span class="o">=</span> <span class="p">{</span>
@@ -11232,13 +11207,22 @@ dim_geografia                      53 filas cargadas
 dim_producto                       45 filas cargadas
 dim_cliente                      9822 filas cargadas
 fact_cliente_snapshot            9822 filas cargadas
+fact_producto_cliente           21260 filas cargadas
+agg_segmento                        3 filas cargadas
+agg_nivel_renta                     6 filas cargadas
+agg_provincia                      53 filas cargadas
+agg_producto                       45 filas cargadas
+agg_distribucion_productos         12 filas cargadas
+agg_top_clientes_patrimonio       100 filas cargadas
+
+✅ Carga del DWH completada
 </pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d7b10fce">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=70eabcef">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -11275,12 +11259,12 @@ fact_cliente_snapshot            9822 filas cargadas
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5ced89aa">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=27a4e8ca">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [154]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">uuid</span>
@@ -11369,14 +11353,14 @@ fact_cliente_snapshot            9822 filas cargadas
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Catálogo: 7 KPIs (7 nuevos) | Ejecución: b6b7267c-e93d-4e38-8731-7b707f992d2f
+<pre>Catálogo: 7 KPIs (0 nuevos) | Ejecución: 682cea44-1d16-4c36-ae5b-2fe2ae573ab7
 </pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2337829c">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=86ab1289">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -11396,12 +11380,12 @@ fact_cliente_snapshot            9822 filas cargadas
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6609049e">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=20097454">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [155]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">kpi_dist</span> <span class="o">=</span> <span class="n">leer</span><span class="p">(</span><span class="sa">f</span><span class="s2">"""</span>
@@ -11438,7 +11422,7 @@ fact_cliente_snapshot            9822 filas cargadas
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[155]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -11570,7 +11554,7 @@ fact_cliente_snapshot            9822 filas cargadas
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e64c6f90">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c6ba5efe">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -11591,12 +11575,12 @@ fact_cliente_snapshot            9822 filas cargadas
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=70dfcf3f">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9c4931da">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [156]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">riesgo</span> <span class="o">=</span> <span class="n">leer</span><span class="p">(</span><span class="sa">f</span><span class="s2">"""</span>
@@ -11646,7 +11630,7 @@ Ratio mediano entre los clientes con deuda: 17.26
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[156]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -11728,7 +11712,7 @@ Ratio mediano entre los clientes con deuda: 17.26
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=01f1a9f0">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9ddd62b4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -11744,12 +11728,12 @@ Ratio mediano entre los clientes con deuda: 17.26
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b629ad8e">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a2aea4b5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [157]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">kpi_renta</span> <span class="o">=</span> <span class="n">leer</span><span class="p">(</span><span class="sa">f</span><span class="s2">"""</span>
@@ -11774,7 +11758,7 @@ Ratio mediano entre los clientes con deuda: 17.26
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[157]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -11872,7 +11856,7 @@ Ratio mediano entre los clientes con deuda: 17.26
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=97d0836e">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=30dddced">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -11893,12 +11877,12 @@ Ratio mediano entre los clientes con deuda: 17.26
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=fcefb793">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=0c7002fa">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [158]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">kpi_seg</span> <span class="o">=</span> <span class="n">leer</span><span class="p">(</span><span class="sa">f</span><span class="s2">"""</span>
@@ -11928,7 +11912,7 @@ Ratio mediano entre los clientes con deuda: 17.26
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[158]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -12008,7 +11992,7 @@ Ratio mediano entre los clientes con deuda: 17.26
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a64b534c">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=66fb5aab">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -12024,12 +12008,12 @@ Ratio mediano entre los clientes con deuda: 17.26
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b4a89a4b">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f640cad4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [159]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">kpi_pen</span> <span class="o">=</span> <span class="n">leer</span><span class="p">(</span><span class="sa">f</span><span class="s2">"""</span>
@@ -12088,7 +12072,7 @@ Top 10 productos:
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[159]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -12204,7 +12188,7 @@ Top 10 productos:
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d5297fd7">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=75e584b3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -12219,12 +12203,12 @@ Top 10 productos:
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b9f354f2">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=15d5d04e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [160]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">kpi_prov</span> <span class="o">=</span> <span class="n">leer</span><span class="p">(</span><span class="sa">f</span><span class="s2">"""</span>
@@ -12261,7 +12245,7 @@ Top 10 productos:
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[160]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -12465,7 +12449,7 @@ Top 10 productos:
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c985cb8a">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=379279c8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -12487,12 +12471,12 @@ Top 10 productos:
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e471c794">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f65159c5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [161]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">top_clientes</span> <span class="o">=</span> <span class="n">leer</span><span class="p">(</span><span class="sa">f</span><span class="s2">"""</span>
@@ -12533,7 +12517,7 @@ Clientes del Top 100 con margen inferior a la mediana de la cartera (35.90 €):
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[161]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -12753,7 +12737,7 @@ Clientes del Top 100 con margen inferior a la mediana de la cartera (35.90 €):
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=101925ad">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c568a161">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -12763,12 +12747,12 @@ Clientes del Top 100 con margen inferior a la mediana de la cartera (35.90 €):
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=469f1f8e">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=fb67f79a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [162]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_resultados</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">resultados_kpi</span><span class="p">)</span>
@@ -12795,13 +12779,13 @@ Clientes del Top 100 con margen inferior a la mediana de la cartera (35.90 €):
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>✅ 438 resultados guardados en kpi_resultado (ejecución b6b7267c-e93d-4e38-8731-7b707f992d2f)
+<pre>✅ 438 resultados guardados en kpi_resultado (ejecución 682cea44-1d16-4c36-ae5b-2fe2ae573ab7)
 
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[162]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -12830,55 +12814,167 @@ Clientes del Top 100 con margen inferior a la mediana de la cartera (35.90 €):
 <tbody>
 <tr>
 <th>0</th>
-<td>2026-09-29 18:57:01</td>
+<td>2026-09-30 04:54:21</td>
 <td>Distribución de clientes por nº de productos</td>
 <td>pct_clientes_mono_producto</td>
 <td>27.0100</td>
 </tr>
 <tr>
 <th>1</th>
-<td>2026-09-29 18:57:01</td>
+<td>2026-09-30 04:54:21</td>
 <td>Distribución de clientes por nº de productos</td>
 <td>pct_clientes_sin_productos</td>
 <td>20.0500</td>
 </tr>
 <tr>
 <th>2</th>
-<td>2026-09-29 18:57:01</td>
+<td>2026-09-30 04:54:21</td>
 <td>Ratio de endeudamiento</td>
 <td>pct_clientes_riesgo_critico</td>
 <td>14.5000</td>
 </tr>
 <tr>
 <th>3</th>
-<td>2026-09-29 18:57:01</td>
+<td>2026-09-30 04:54:21</td>
 <td>Ratio de endeudamiento</td>
 <td>ratio_mediano_clientes_con_deuda</td>
 <td>17.2642</td>
 </tr>
 <tr>
 <th>4</th>
-<td>2026-09-29 18:57:01</td>
+<td>2026-09-30 04:54:21</td>
 <td>Penetración de producto</td>
 <td>productos_sin_clientes</td>
 <td>9.0000</td>
 </tr>
 <tr>
 <th>5</th>
-<td>2026-09-29 18:57:01</td>
+<td>2026-09-30 04:54:21</td>
 <td>Cartera por provincia</td>
 <td>pct_clientes_top3_provincias</td>
 <td>46.7100</td>
 </tr>
 <tr>
 <th>6</th>
-<td>2026-09-29 18:57:01</td>
+<td>2026-09-30 04:54:21</td>
 <td>Concentración de patrimonio en el Top 100</td>
 <td>clientes_top100_margen_bajo_mediana</td>
 <td>3.0000</td>
 </tr>
 <tr>
 <th>7</th>
+<td>2026-09-30 04:54:21</td>
+<td>Concentración de patrimonio en el Top 100</td>
+<td>pct_patrimonio_top100</td>
+<td>24.1170</td>
+</tr>
+<tr>
+<th>8</th>
+<td>2026-09-29 20:05:29</td>
+<td>Distribución de clientes por nº de productos</td>
+<td>pct_clientes_mono_producto</td>
+<td>27.0100</td>
+</tr>
+<tr>
+<th>9</th>
+<td>2026-09-29 20:05:29</td>
+<td>Distribución de clientes por nº de productos</td>
+<td>pct_clientes_sin_productos</td>
+<td>20.0500</td>
+</tr>
+<tr>
+<th>10</th>
+<td>2026-09-29 20:05:29</td>
+<td>Ratio de endeudamiento</td>
+<td>pct_clientes_riesgo_critico</td>
+<td>14.5000</td>
+</tr>
+<tr>
+<th>11</th>
+<td>2026-09-29 20:05:29</td>
+<td>Ratio de endeudamiento</td>
+<td>ratio_mediano_clientes_con_deuda</td>
+<td>17.2642</td>
+</tr>
+<tr>
+<th>12</th>
+<td>2026-09-29 20:05:29</td>
+<td>Penetración de producto</td>
+<td>productos_sin_clientes</td>
+<td>9.0000</td>
+</tr>
+<tr>
+<th>13</th>
+<td>2026-09-29 20:05:29</td>
+<td>Cartera por provincia</td>
+<td>pct_clientes_top3_provincias</td>
+<td>46.7100</td>
+</tr>
+<tr>
+<th>14</th>
+<td>2026-09-29 20:05:29</td>
+<td>Concentración de patrimonio en el Top 100</td>
+<td>clientes_top100_margen_bajo_mediana</td>
+<td>3.0000</td>
+</tr>
+<tr>
+<th>15</th>
+<td>2026-09-29 20:05:29</td>
+<td>Concentración de patrimonio en el Top 100</td>
+<td>pct_patrimonio_top100</td>
+<td>24.1170</td>
+</tr>
+<tr>
+<th>16</th>
+<td>2026-09-29 18:57:01</td>
+<td>Distribución de clientes por nº de productos</td>
+<td>pct_clientes_mono_producto</td>
+<td>27.0100</td>
+</tr>
+<tr>
+<th>17</th>
+<td>2026-09-29 18:57:01</td>
+<td>Distribución de clientes por nº de productos</td>
+<td>pct_clientes_sin_productos</td>
+<td>20.0500</td>
+</tr>
+<tr>
+<th>18</th>
+<td>2026-09-29 18:57:01</td>
+<td>Ratio de endeudamiento</td>
+<td>pct_clientes_riesgo_critico</td>
+<td>14.5000</td>
+</tr>
+<tr>
+<th>19</th>
+<td>2026-09-29 18:57:01</td>
+<td>Ratio de endeudamiento</td>
+<td>ratio_mediano_clientes_con_deuda</td>
+<td>17.2642</td>
+</tr>
+<tr>
+<th>20</th>
+<td>2026-09-29 18:57:01</td>
+<td>Penetración de producto</td>
+<td>productos_sin_clientes</td>
+<td>9.0000</td>
+</tr>
+<tr>
+<th>21</th>
+<td>2026-09-29 18:57:01</td>
+<td>Cartera por provincia</td>
+<td>pct_clientes_top3_provincias</td>
+<td>46.7100</td>
+</tr>
+<tr>
+<th>22</th>
+<td>2026-09-29 18:57:01</td>
+<td>Concentración de patrimonio en el Top 100</td>
+<td>clientes_top100_margen_bajo_mediana</td>
+<td>3.0000</td>
+</tr>
+<tr>
+<th>23</th>
 <td>2026-09-29 18:57:01</td>
 <td>Concentración de patrimonio en el Top 100</td>
 <td>pct_patrimonio_top100</td>
@@ -12892,7 +12988,7 @@ Clientes del Top 100 con margen inferior a la mediana de la cartera (35.90 €):
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5d75a81a">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5cc4a31a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -12902,12 +12998,12 @@ Clientes del Top 100 con margen inferior a la mediana de la cartera (35.90 €):
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7fe5e009">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d14f5d7a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [163]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">conteos</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">leer</span><span class="p">(</span><span class="sa">f</span><span class="s2">"SELECT '</span><span class="si">{</span><span class="n">t</span><span class="si">}</span><span class="s2">' AS tabla, COUNT(*) AS filas FROM </span><span class="si">{</span><span class="n">t</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -12965,8 +13061,8 @@ Clientes del Top 100 con margen inferior a la mediana de la cartera (35.90 €):
  agg_distribucion_productos     12
 agg_top_clientes_patrimonio    100
              kpi_definicion      7
-              kpi_ejecucion      1
-              kpi_resultado    438
+              kpi_ejecucion      3
+              kpi_resultado   1314
 
                                control  filas
  fact_cliente_snapshot sin dim_cliente      0
